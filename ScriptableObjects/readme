@@ -7,6 +7,9 @@ bu tekrarın önüne geçebiliriz.SOnun en önemli özelliklerindendir.
 
 İkinci kullanışlı yanı ise veriler runtime sırasında yapılan değişiklikleri korur.
 
+Üçüncü olarak veriyi class içinde tanımladığımızda her yeni classta  veri kopyalamasına yol açağından 
+veriyi classtan ayrı tutmak istediğimizd kullanabiliriz.
+
 [CreateAssetMenu(menuName = "SO")]
 İle create kısmından yeni SOlar oluşturabiliriz.
 
