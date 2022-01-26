@@ -1,0 +1,17 @@
+Scriptable Objectler sayesinde istediğimiz değerleri tutabilir fonksiyonlar tanımlayabiliriz.
+Temeldeki amacı tekrarın önüne geçmek.Mesela savaş oyunumuzdaki düşmanlar yara aldığında, koşarken ,
+savunma anında ,zafer anında ses efekti eklemek isteyelim.Her bir düşman için tanımladığımızda 
+aynı senaryolar için aynı ses efektlerini kullanmış olsakta her düşman için  ses dosyalarını ayrı ayrı 
+kopyalarız.Bu oyunun boyutunu arttıracaktır.İşte bu noktada SO sayesinde veriyi kopyalamadan adres geçişi yaparak 
+bu tekrarın önüne geçebiliriz.SOnun en önemli özelliklerindendir.
+
+İkinci kullanışlı yanı ise veriler runtime sırasında yapılan değişiklikleri korur.
+
+[CreateAssetMenu(menuName = "SO")]
+İle create kısmından yeni SOlar oluşturabiliriz.
+
+Kullanmaya karar verirken kendimize şu soruları sorabiliriz:
+Ortak kullandığımı durumlarım/verilerim neler ?
+Playmodedan çıktıktan sonra da saklamak istediğim bir şeyler var mı?
+Boyutu küçültmem gerekiyor mu?
+Oyun içindeki değişkenleri tasarım ekibi için daha kolay hale getirmeli miyim?
