@@ -1,0 +1,31 @@
+Zaman değerlidir.Bazen onu yavaşlatıp anın tadını çıkartmak isteriz.
+Bazense tatsız olayları hızlıca geçmek isteriz.En önemlisiyse(bence) her şeyi geri alıp 
+anı tekrardan yaşamak isteriz.
+Dursun zaman
+Dursun diyorsun da
+Oyun değil ki yaşamak
+Ama Ferman abimizinde dediği gibi oyun değil yaşamak.
+Şu an için gerçek hayatta başaramasakta Unityde zamana hükmedebiliriz.
+
+UnityEngine kütüphanesi içinde hazır olarak bulunan Time.timeScale ile başarabiliriz.
+Time.timeScale=1f normal akış eğer 1 i 0.5 ile değiştirirsek zaman 2 kat yavaş akar.
+2 ile değiştirirsek o zaman 2 kat hızlı akar.
+
+Peki ya -1 yaparsak?
+Maalesef zamanı geri alamayız.
+(hata pozitif ya da 0 float değer olmalı) 
+
+Time.timeScale yaptığımızda update metodu içinde olduğunda(Update her framede 1 kez çalışır frame değeride 
+oyunun çalıştığı donanım ile değişkenlik gösterecektir.Bazen 50 bazen 90 gibi.)
+Nesneler donarak hareket ediyor gibi algılanacaktır.(Frame sayısı yüksekse hissedilmeyebilir.)
+Time.fixedDeltaTime ise fizik özelliğine sahip nesnelerin güncellenme süresi.(FixedUpdate metodunda olduğu gibi frame değil zaman bazlı güncelleme)
+Eğer fiziğin güncelleme süresini değitirirsek istediğimiz akıcı hareketi elde edebiliriz
+Compute Physics system calculations after FixedUpdate. 0.02 seconds (50 calls per second) is the default time between calls.
+Unity varsayılan değer olarak 0.02 saniye kullanmakta bu da 50 kez saniyede çalışıyor demek.
+TimeScale 1 baz alınır.Biz de timeScalei değiştirdiğimiz için fixeddeltatime da değiştirerek akıcılık elde edilebilir.
+
+Zamanı geri çevirmek.
+Aslında Unity de de pek mümkün değil.Her şeyi ilk haline geri getirsek bile zaman  geri getirememekteyiz.
+Uyguladığımız mantık nesnelerin konum bilgilerine kaydetmek istediğimiz kadar.Sonrasında kaydettiğimiz sıra 
+ile geri çağırmaktan ibaret.Stack mantığında.İlk giren ilk çıkar.
+List oluşturup tutmak istediğimiz verileri kaydederek sonra çağırarak bunu elde edebiliriz.
