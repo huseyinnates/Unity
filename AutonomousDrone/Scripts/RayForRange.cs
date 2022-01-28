@@ -9,7 +9,7 @@ public class RayForRange : MonoBehaviour
     public Transform hitpoint;
     public Vector3 direction=new Vector3(0,0,0);
     public Vector3 totargetspeed;
-    public float sphereradius=0.14f,maneuverspeed=1f,forwardspeed=1f,tts=1f;
+    public float sphereradius=0.14f,maneuverspeed=20f,forwardspeed=1f,tts=10f;
     Ray raystart,rayend;
     public Transform drone,targetpoint;
     RaycastHit hit;
