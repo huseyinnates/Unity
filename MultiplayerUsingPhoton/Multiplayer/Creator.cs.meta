@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 27a6822a3a2eeac4babedf605cf6dd29
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - general: {instanceID: 0}
+  - creat: {instanceID: 0}
+  - baseray: {instanceID: 0}
+  - cursor: {instanceID: 0}
+  - creatoritself: {instanceID: 0}
+  - brick: {fileID: 2507045615166146099, guid: b266728fd87e9db46987659522c470cf, type: 3}
+  - pos: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
