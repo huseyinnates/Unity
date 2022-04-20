@@ -27,5 +27,5 @@ TimeScale 1 baz alınır.Biz de timeScalei değiştirdiğimiz için fixeddeltati
 Zamanı geri çevirmek.
 Aslında Unity de de pek mümkün değil.Her şeyi ilk haline geri getirsek bile zaman  geri getirememekteyiz.
 Uyguladığımız mantık nesnelerin konum bilgilerine kaydetmek istediğimiz kadar.Sonrasında kaydettiğimiz sıra 
-ile geri çağırmaktan ibaret.Stack mantığında.İlk giren ilk çıkar.
+ile geri çağırmaktan ibaret.Stack mantığında.
 List oluşturup tutmak istediğimiz verileri kaydederek sonra çağırarak bunu elde edebiliriz.
